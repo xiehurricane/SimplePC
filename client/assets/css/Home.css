@@ -1,0 +1,468 @@
+
+/*全局样式*/
+.f-left{
+  /*float:left;*/
+}
+
+.warp-content{
+  padding-left:calc(100vw - 100%);
+}
+.header{
+  /*background-color: #eff3f6;*/
+  background-color: #fff;
+}
+
+.footer{
+  width:100%;
+  height:122px;
+  padding-top:40px;
+  /*background-color: #eff3f6;*/
+  background-color: #fff;
+}
+.footer.bottom{  
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+}
+/*
+.content{
+  padding: 0 100px;
+}*/
+.text label{
+  padding-left:20px;
+}
+.text input{
+  padding-left:20px !important;
+}
+.login-btn>.ant-btn{
+  width:100%;
+  height:40px;
+  border-radius: 20px;
+  color:#3498db;
+  border-color: #3497da;
+}
+
+.ant-layout-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+.box>.selectrole .ant-select-selection{
+  border:none;
+}
+.box>.selectrole{
+  width: 100px;
+  margin-right:50px;
+  margin-left:-8px;
+  font-size:18px;
+  color:#3498db
+}
+.box>.selectrole .ant-select-arrow{
+  right:0
+}
+.box>.selectrole .ant-select-selection {
+  box-shadow: 0 0 0 0 rgba(45, 183, 245, 0.2);
+}
+
+
+/*个人中心*/
+.center-title{
+  display:flex;
+  justify-content:flex-start;
+  padding:24px;
+  overflow: hidden;
+}
+.pic{
+  width:60px;
+  height:60px;
+  float:left \9;
+}
+.info{
+  height:60;
+  padding-left:10;
+  padding-top:7;
+  float:left \9;
+}
+.ant-btn.add-card-btn{
+  width:70px;
+  height:22px;
+  color:#329adc;
+  line-height: 1;
+  border:1px solid #329adc !important;
+  border-radius:11px !important;
+}
+.add-card-modal .ant-modal-content>.ant-modal-footer{
+  text-align:center;
+  border:none;
+}
+.add-card-modal .ant-modal-content>.ant-modal-header{
+  border:none;
+  padding-left: 30px;
+  padding-top:30px;
+  padding-bottom: 20px;
+}
+.add-card-modal .ant-modal-content>.ant-modal-header>.ant-modal-title{
+  font-size:18px;
+  color:#138dd6;
+
+}
+.add-card-modal .ant-modal-content>.ant-modal-body{
+  padding-left: 30px;
+  padding-right:30px;
+  padding-top:0;
+}
+.add-card-item{
+  border-bottom: 1px solid #e5e5e5;
+  padding:10px;
+  margin-top: 12px;
+  font-size:16px;
+  overflow: hidden;
+}
+
+.add-card-item-key{
+  display:inline-block;
+  width:180px;
+  line-height:1;
+}
+.add-card-item-key .start{
+  color:red;
+  vertical-align: -4px;
+  margin-right:5px;
+}
+.add-card-item-value{
+  display:inline-block;
+  width:320px;
+}
+
+.add-card-table td{
+  width:120px;
+  height:32px;
+}
+
+.add-card-table .add-card-table-head{
+  color:#6f6f6f;
+  font-size: 13px;
+}
+.center-item{
+  padding:24px;
+}
+.center-item-top{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:300px;
+  margin:0 auto;
+  padding:10px 0;
+  overflow: hidden;
+}
+.center-item-line{
+  width:80px;
+  height:1px;
+  background:#b6c2c9;
+  float:left \9;
+  margin:10px 5px \9;
+}
+.center-item-name{
+  font-size:16px;
+  font-weight:700;
+  color:#555;
+  float:left \9;
+  margin:0 5px \9;
+}
+
+/*预约表格*/
+.reservation-table{
+  text-align:center;
+}
+.reservation-table .ant-table-thead th{
+  background:#69afd3;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+}
+.reservation-table.SurveyinfoTable{
+  width:655px;
+  float:left;
+  height:700px;
+}
+
+.cards{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  overflow: hidden \9;
+}
+.cards-item{
+  width:310px;
+  height:196px;
+  margin:8px;
+  float:left \9;
+  display:inline-block;
+}
+.cards-item .unbind-card{
+  
+  margin-right:10px;
+}
+.cards-item .unbind-card:hover{
+  cursor:pointer;
+  color:rgb(188,220,243);
+}
+
+/*网络预诊*/
+.prediagnosis-index{
+  padding:130px 40px 0;
+  background:#eff3f6 url('../imgs/index_background.png') no-repeat;
+  background-size: 100%;
+  height:1000px;
+}
+.prediagnosis-index-text{
+  padding:20px 60px 20px 50px;
+  background:white;
+}
+.index-text-title{
+  margin-left:-15px;
+  margin-top: 25px;
+  position:relative;
+  font-size:18px;
+  color:#3598d7;
+}
+.index-text-title .text{
+  position:absolute;
+  top:-10px;
+  left:-20px;
+}
+
+.pre-hospital-item{
+  margin-top:30px;
+  overflow: hidden;
+}
+.pre-hospital-item .pre-item-pic{
+  width:260px;
+  height:168px;
+  float:left;
+}
+.pre-hospital-item .pre-item-info{
+  padding-bottom: 10px;
+  padding-left:333px;
+  background:#f9f9f9;
+}
+.pre-hospital-item .pre-item-info:hover{
+  background:#eff4f5;
+}
+
+.pre-hospital-item .pre-item-info .pre-item-info-hname{
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 600;
+  padding:20px 0;
+}
+.pre-hospital-item .pre-item-info .pre-item-info-p{
+  padding:10px 0;
+  font-size:14px;
+  line-height: 100%;
+  color:#525252;
+}
+.pre-hospital-item .pre-item-depart{
+  position:relative;
+  margin-top:32px;
+  padding-top:20px;
+  padding-left:28px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+  border:1px solid #ececec;
+  display:none;
+}
+.pre-hospital-item .pre-item-depart .pre-item-depart-line{
+  position:absolute;
+  width:25px;
+  height:25px;
+  border:1px solid transparent;
+}
+.pre-hospital-item .pre-item-depart .pre-item-depart-item{
+  margin-top:20px;
+  padding-bottom:20px;
+}
+.pre-hospital-item .pre-item-depart .pre-item-depart-item .department{
+  display:inline-block;
+  width:24%;
+  font-size:16px;
+}
+.pre-hospital-item .pre-item-depart .pre-item-depart-item .department>span:hover{
+  cursor:pointer;
+  color:#3f96bc;
+}
+
+.pre-hospital-item .pre-item-depart .depart-name{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+.pre-hospital-item .pre-item-depart .depart-name>span{
+  display:inline-block;
+  width:33%;
+  overflow: hidden;
+}
+.pre-hospital-item .pre-item-depart .doctor{
+  display:inline-block;
+  position:relative;
+  width:280px;
+  height:142px;
+  background:#f6f9f8;
+  padding:10px 1px 1px 10px;
+
+  overflow: hidden;
+}
+
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime{
+  position:absolute;
+  left:0;
+  width:100%;
+  height:60px;
+  line-height:20px;
+}
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .schedule-date{
+  width:100%;
+  height:20px;
+  background:#3499da;
+  color:white;
+  line-height: inherit;
+}
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .schedule-date img{
+  vertical-align: -1px;
+  margin:0 7px;
+  cursor:pointer;
+}
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .schedule-date .time{
+  display:inline-block;
+  width:228px;
+  text-align: center;
+}
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .calender{
+  width:100%;
+  height:20px;
+  background:#c7dce8;
+}
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .calendar span,
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .schedule-time .date{
+  display: inline-block;
+  width:40px;
+  text-align: center;
+}
+.pre-hospital-item .pre-item-depart .doctor .scheduleTime .schedule-time{
+  width:100%;
+  height:20px;
+  background:#ffffff;
+}
+
+/*上传附件*/
+.myupload i{
+ font-size: 28px;
+  color: #999;
+}
+.myupload .ant-upload-text{
+    margin-top: 8px;
+  font-size: 12px;
+  color: #fff;
+
+}
+.myupload .ant-upload-select-picture span{
+  padding:17px 1px ;
+  margin-left:10px;
+  margin-top:10px;
+  border:1px #ccc dashed;
+  cursor:pointer;
+  text-align:center;
+  background:#7cc6f4;
+}
+.myupload .ant-upload-select-picture span:hover{
+  border-color:#9bcde3;
+}
+.describe-file{
+  height:100%;
+  text-align: center;
+  cursor:pointer;
+  color:white;
+  float:left;
+  margin-left:10px;
+}
+.describe-file .ant-upload-select-picture{
+  width:160px;
+  height:160px;
+  background:#7cc6f4;
+}
+.describe-file .ant-upload-select-picture span{
+  padding-top:54px;
+  padding-bottom:54px;
+}
+.describe-file .ant-upload-list{
+  text-align: left;
+}
+.describe-file .ant-upload-list .ant-upload-list-item {
+  display: inline-block;
+  width: 200px;
+  margin-right: 8px;
+}
+.download {
+  font-size:28px;
+  color:white;
+  text-align:center;
+  display:block;
+  margin-top: 60px;
+}
+/*个人中心卡 */
+.notemessage .ant-modal-close{
+    right:10px;
+    top:10px;
+}
+.ant-popover .ant-popover-buttons{
+  text-align: center;
+}
+.ant-popover .ant-popover-buttons .ant-btn{
+  width:50px;
+}
+
+/*IEVideo*/
+.mymsg{
+  margin-right:4px;
+  margin-top:4px;
+  padding:5px;
+  float:right;
+  max-width:70%;
+  text-align:right;
+  background-color:rgb(158,234,106);
+  overflow-x:hidden;
+  wrap:wrap
+}
+.me{
+  float:right;
+  margin-top:9px;
+}
+.message-box{
+  width:100%;
+  overflow: hidden;
+  padding:5px;
+}
+.othermsg{
+  margin-left:4px;
+  margin-top:4px;
+  padding:5px;
+  float:left;
+  max-width:70%;
+  text-align:left;
+  background-color:rgb(255,255,255);
+  overflow-x:hidden;
+  wrap:wrap
+}
+.other{
+  float:left;
+  margin-top:9px
+}
+/*处理table的loading效果*/
+.ant-spin-nested-loading .ant-spin-dot{
+  display:block !important;
+}
+.footernone .ant-modal-footer{
+  border-color:transparent;
+}

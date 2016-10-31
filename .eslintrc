@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint-config-airbnb",
+  "rules": {
+    "spaced-comment": [1],
+    "import/extensions": [0],
+    "no-unused-vars": [1],
+    "no-empty": [1],
+    "react/wrap-multilines": [1],
+    "react/no-multi-comp": [1],
+    "no-constant-condition": [0],
+    "react/jsx-no-bind": [1],
+    "react/forbid-prop-types":[0],
+    "react/no-unused-prop-types":0,
+    "react/prop-types":0,
+    "arrow-body-style": [1],
+    "react/prefer-stateless-function": [1],
+    "semi": [1]
+  },
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true
+  }
+}
+# 0 off 1 warn  2 error

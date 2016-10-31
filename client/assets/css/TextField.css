@@ -1,0 +1,108 @@
+
+.input-box{
+	font-size: 16px;
+	line-height: 24px;
+	width: 100%;
+	height: 72px;
+	display: inline-block;
+	position: relative;
+	font-family: Roboto, sans-serif;
+	transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+	background-color: transparent;
+	z-index:-1 \9;
+}
+.input-text{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	 margin-top: 14px;
+	 padding-left: 18px;
+	 padding-top:24px \9;
+	 position: relative;
+	 width: 100%;
+	 height: 100%;
+	 height: 100% \9;
+	 border: none;
+	 outline: none;
+	 color: rgba(0, 0, 0, 0.870588);
+	 font-style: inherit;
+	 font-variant: inherit;
+	 font-weight: inherit;
+	 font-stretch: inherit;
+	 font-size: inherit;
+	 line-height: inherit;
+	 font-family: inherit;
+	 box-sizing: border-box;
+	 background-color: rgba(0, 0, 0, 0);
+}
+:root .input-text{
+	padding-top:0;
+};
+.input-label{
+	position: absolute;
+	line-height: 22px;
+	top: 38px;
+	/*top: 5px \9;*/
+	left: 18px;
+	transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+	z-index: 1;
+	cursor: text;
+	transform: scale(1) translate3d(0px, 0px, 0px);
+	transform-origin: left top 0px;
+	pointer-events: auto;
+	color: rgba(0, 0, 0, 0.298039);
+	-webkit-user-select: none;
+}
+.input-label-onfocus{
+	top:10px;
+	left:0;
+	font-size:9px;
+}
+.input-line{
+	border-bottom-width: 1px;
+	border-style: none none solid;
+	border-color: rgb(224, 224, 224);
+	bottom: 8px;
+	box-sizing: content-box;
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+}
+.input-animateline{
+	border-bottom-width: 2px;
+	border-style: none none solid;
+	border-color: rgb(0, 188, 212);
+	bottom: 8px;
+	box-sizing: content-box;
+	margin: 0px;
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.input-animateline-onfocus{
+	transform: scaleX(1);
+}
+
+.select-input{
+	padding-left:18px;
+	margin-top:38px;
+	width:100%;
+}
+.select-input .ant-select-selection{
+	border:none;
+	outline:none;
+}
+.ant-select-open.select-input,.ant-select-focused.select-input .ant-select-selection{
+	border:none;
+	outline:none;
+	box-shadow: none;
+}
+.input-mask{
+	position:absolute;
+	right:10px;
+	height:52px;
+	width:60px;
+	display:none;
+	display:block \9;
+	top:34px;
+	background:white;
+}

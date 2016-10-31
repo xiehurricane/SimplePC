@@ -1,0 +1,349 @@
+.formtable{
+  margin:10px 0;
+  padding:0 20px;
+}
+.text_align{
+  text-align: center;
+}
+.haveUnit .ant-form-item-control {
+  position:relative;
+}
+.haveUnit .unit{
+  position:absolute;
+  right:0;
+}
+.fixedHead{
+  width:90%;
+  position:fixed;
+  top:0;
+  background:#FFFFFF;
+  z-index:100;
+}
+/*进度*/
+.myTabs .ant-tabs-bar{
+    border:none;
+}
+.myTabs .ant-tabs-ink-bar{
+  background-color:#FFFFFF;
+}
+.myTabs .ant-tabs-nav .ant-tabs-tab-inner::after{
+  content:"..............";
+  position: absolute;
+  top: 3px;
+}
+.myTabs .ant-tabs-nav .ant-tabs-tab-inner:last-child::after{
+  content:"";
+}
+.myTabs .ant-tabs-nav{
+  float:none;
+}
+.myTabs.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+  border:none;
+  background-color:#ffffff;
+}
+.myTabs.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+  border:none;
+}
+.myTabs.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-inner{
+  padding: 7px 0px 6px;
+}
+.myTabs .lines{
+  width: 50px;
+  height: 3px;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  border-top: 1px dashed;
+}
+.myTabs .ant-tabs-nav-scroll{
+  text-align: center;
+}
+/*进度*/
+.myConfirmModal .ant-modal-footer{
+  text-align: center;
+}
+.positionRelative{
+  position:relative;
+}
+.linkhead{
+  margin:40px 0 0 0;
+  border-bottom:1px solid #eeeeee;
+}
+.linkhead ul{
+  width:716px;
+  margin:0 auto;
+  list-style: none;
+  overflow:hidden;
+}
+.linkhead ul li{
+  width:132px;
+  float:left;
+  padding:0 0 18px 0;
+  border-bottom:4px solid #FFFFFF;
+  text-align: center;
+}
+.linkhead ul li.active{
+  border-bottom:4px solid #07cdd8;
+}
+.linkhead ul li.centerli{
+  margin:0 160px;
+}
+.linkhead ul li a{
+  font:normal normal 500 14px "";
+  color:#c6c6c6
+}
+.patientrecordcontent{
+  margin:20px 0;
+  padding:0 20px;
+}
+.clear{
+  display:block;
+  clear:both;
+  content:"";
+}
+.mocalimg{
+  width:100%;
+}
+.grade{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  text-align: right;
+}
+.process{
+  font:normal normal 500 16px "Microsoft YaHei UI";
+  color:#c6c6c6;
+  text-align:center;
+}
+.process .process_item{
+  position:relative;
+}
+.process span{
+  display:inline-block;
+}
+.process .dash{
+  width:60px;
+  height:10px;
+  position:relative;
+  top:-4px;
+  border-bottom:2px dotted #c6c6c6;
+}
+.process .process_item.active{
+  color:#09cdd9;
+}
+.process .process_item.active  .dash{
+  border-bottom:2px dotted #09cdd9;
+}
+.input_separate{
+  height: 37px;
+  background-color: #f7f7f7;
+  color: #e3e3e3;
+  font-size: 30px;
+  font-weight: 500;
+}
+.input_separate p{
+  width:0px;
+}
+.unit{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.mySlider{
+  background-color:#cbcbcb !important;
+  border-top:4px solid #eaf0ee !important;
+  border-bottom:4px solid #eaf0ee !important;
+}
+.headbox{
+  padding: 10px 81px 10px 0;
+  position:fixed;
+  top:0;
+  background:#FFFFFF;
+  z-index:999;
+}
+.main_content{
+  margin:40px 0 0 0;
+  padding:0 20px;
+}
+.bg_gray{
+  padding:10px 20px;
+  position:relative;
+  background:#f7f7f7;
+}
+.form_basic h4{
+  margin:20px 0 10px 0;
+  font:normal normal 500 16px "Microsoft YaHei UI";
+  color:#5c5c5c;
+}
+/*label不要冒号*/
+.lable_nocolon .ant-form-item-label label:after{
+  content:" ";
+}
+/*label左对齐*/
+.label_left .ant-form-item-label{
+  text-align:left;
+}
+/*患者建档列表*/
+.head{
+  width:100%;
+  padding:20px 0;
+  background:#15bdc8;
+}
+.search_form {
+  width:1000px;
+  margin:0 auto;
+}
+.search_form .formitem_radius{
+  border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+}
+.head .ant-select-selection{
+  background-color:#0eafb9;
+  border-color:#0eafb9;
+  border-radius:0;
+}
+.head .ant-form-item-label label:after{
+  content:" ";
+}
+.search_form .ant-form-item{
+  margin:0;
+  background:#0eafb9;
+}
+.search_form .lastformitem{
+
+}
+.search_form .lastformitem input{
+  border:0;
+  background:#0eafb9;
+  color:#FFFFFF;
+  font-size:14px;
+}
+.search_form .lastformitem input:focus{
+  border:0;
+}
+.search_form .lastformitem input:hover{
+  background:#0eafb9;
+}
+.search_form .lastformitem input::-webkit-input-placeholder{
+  color:#ffffff;
+}
+.search_form .lastformitem input::-moz-input-placeholder{
+  color:#ffffff;
+}
+.search_form .lastformitem input:-moz-input-placeholder{
+  color:#ffffff;
+}
+.search_form .lastformitem input::-ms-input-placeholder{
+  color:#ffffff;
+}
+.search_form .ant-form-item-label label{
+  font-size:14px;
+  color:#FFFFFF;
+}
+.head .ant-input{
+  border-radius:0;
+}
+.ant-table th{
+  text-align: center;
+}
+.headinput{
+  margin:0;
+  border-radius:0;
+}
+.searchbtn{
+  width:68px;
+  height:35px;
+  margin:-1px 0 0 0;
+  box-sizing:border-box;
+  border:0;
+  border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  background:#0eafb9;
+}
+.searchbtn i{
+  font-size:24px;
+  font-weight:600;
+}
+.renewbox{
+  margin:0 0 30px 0;
+  float:left;
+}
+.main{
+  margin:160px 0 0 0;
+  padding:0 20px;
+}
+/*患者建档列表*/
+
+/*患者建档*/
+.searchbox{
+  float:left;
+}
+.searchbox .ant-form-item{
+  margin:0;
+}
+.searchbox .search_input{
+  width:240px;
+  height:37px;
+  background:#f7f7f7;
+  border:none;
+  border-radius:0;
+}
+.searchbox .search_btn{
+  width:70px;
+  border-radius:0;
+  border-left:1px solid #e4e4e4;
+  background:#f7f7f7;
+  border-color:#f7f7f7;
+}
+.searchbox .search_btn:before{
+  content:"|";
+}
+.searchbox .search_btn i{
+  color:#08ced7;
+  font:normal normal 600 24px "";
+}
+.basic_info{
+  height:42px;
+  margin:0 20px;
+  float:left;
+  font:normal normal 500 16px/42px "";
+}
+.basic_info .info{
+  margin:0 10px;
+}
+.operation{
+  height:42px;
+  float:right;
+  line-height:42px;
+  position:fixed;
+  top:100px;
+  right:0;
+  z-index:101;
+}
+.form_basic .ant-form-item{
+  margin-bottom:0;
+}
+.centerbtn{
+  margin:0 20px;
+}
+.bg-yellow{
+  width:80px;
+  background:#f5a528;
+  border-color:#f5a528;
+}
+/*患者建档*/
+
+/*基线管理*/
+.description_p span{
+  font-size:14px;
+  color:#5c5c5c;
+}
+/*基线管理*/
+/*调查表*/
+.havespace{
+  margin:20px 0 0 0;
+}
+/*调查表*/

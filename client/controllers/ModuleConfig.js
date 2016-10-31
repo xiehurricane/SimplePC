@@ -1,0 +1,10 @@
+//export const API_ROOT = 'http://10.88.67.79:8080/newPortal';
+//export const API_ROOT = 'http://10.88.32.220:8080/newPortal';
+//export const API_ROOT = 'http://10.88.33.15:8080/newPortal';
+//export const API_ROOT = 'http://10.88.35.255:8080/newPortal';
+//export const API_ROOT = 'http://10.88.32.135:8080/newPortal';
+//export const API_ROOT = 'http://10.88.32.100:8080/newPortal';
+//export const API_ROOT = 'http://10.88.32.93:8080/newPortal';
+// export const API_ROOT = 'http://192.168.0.101:8088/newPortal';
+export const API_ROOT = 'http://localhost:3000';
+// export const API_ROOT = API_ROOT
