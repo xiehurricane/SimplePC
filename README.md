@@ -87,6 +87,22 @@ React
 
 Nodejs
  - http://nodejs.cn/
+
+## 生命周期
+componentWillMount
+componentDidMount
+
+## 事件原生js
+onClick
+
+## 页面跳转
+
+router.push({ pathname: '/antrm/userInfo', state: { select: '1' } });
+
+pathname 页面路径
+state 参数
+
 ## License
+
 
 MIT

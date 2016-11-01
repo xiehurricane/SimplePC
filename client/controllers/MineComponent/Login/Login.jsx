@@ -33,16 +33,19 @@ class Login extends Component {
     this.selectChange = this.selectChange.bind(this);
     this.onfocus = this.onfocus.bind(this);
     this.onBlur = this.onBlur.bind(this);
-    this.login = this.login.bind(this);
+    this.testlogin = this.testlogin.bind(this);
     this.keydown = this.keydown.bind(this);
     this.validPhoneno = this.validPhoneno.bind(this);
     this.phoneBlur = this.phoneBlur.bind(this);
   }
   componentWillMount() {
+    log('componentWillMount1');
+    // log(this.refs.aselect.value);
 
   }
 
   componentWillReceiveProps(props) {
+    log('componentWillReceiveProps');
     const { status } = props.model;
     if (status) {
       if (!status.error && status.status !== '0') {
@@ -67,7 +70,11 @@ class Login extends Component {
       this.props.loginPassed();
     }
   }
+  componentDidMount() {
+    log('componentDidMount');
+    log(this.refs.aselect.value);
 
+  }
   onfocus(role) {
     switch (role) {
       case 'phone':
@@ -110,20 +117,29 @@ class Login extends Component {
       this.login();
     }
   }
-  login() {
+  testlogin() {
       // this.context.router.push({pathname:'/antrm/userInfo',state:{select:'1'}})
-
-    const { phoneno } = this.state;
-    let { password } = this.state;
+    log('点击登录')
+    // const { phoneno } = this.state;
+    const phoneno = this.state.phoneno;
+    // let { password } = this.state;
+    let password = this.state.password;
+    log('value:',)
     const username = phoneno.replace(/\s/g, '');
     password = password.replace(/\s/g, '');
     const router = this.context.router;
       // this.props.login({path:'/login',param:{phoneno,password,userType:this.state.userType}})
+      /*
+下面的{username}相当于
+{username:username}
+let json = {a:b,c:'c'};
+{paramName：json}
+       */
     callApiWithCallBack(
         API_ROOT,
         { path: '/login', param: { username, password, userType: this.state.userType } },
         'post',
-        (res) => {
+        (res) => { // 成功回调
           log('res', res);
           router.push({ pathname: '/antrm/userInfo', state: { select: '1' } });
         },
@@ -150,7 +166,9 @@ class Login extends Component {
       <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: 28, paddingBottom: 18, paddingLeft: 100, paddingRight: 100 }}>
         <div style={{ float: 'left', marginLeft: 60 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+
             <Select
+              ref="aselect"
               showSearch
               className="selectrole"
               placeholder="请选择人员"
@@ -202,7 +220,7 @@ class Login extends Component {
               : null
               }
           <div className="login-btn">
-            <Button type="ghost" onClick={this.login}>登录</Button>
+            <Button type="ghost" onClick={this.testlogin}>登录</Button>
           </div>
           <div style={{ textAlign: 'right', marginTop: 20 }}>
             <p><Link to={{ pathname: '/antrm/patient/reset', state: { select: '' } }}>忘记密码</Link></p>
